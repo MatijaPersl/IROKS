@@ -36,7 +36,7 @@
         
       ?>
       <!-- form za registracijo -->
-      <form class="form-signup" action="includes/registration.inc.php" method="post">
+      <form class="form-signup" action="includes\registration.inc.php" method="post">
         <input type="text" name="uid" placeholder="Username"><br>
         <input type="text" name="mail" placeholder="Email"><br>
         <input type="password" name="pwd" placeholder="Password"><br>
