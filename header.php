@@ -9,6 +9,11 @@ require "includes\dbh.inc.php";
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title></title>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- DATATABLES -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -20,7 +25,7 @@ require "includes\dbh.inc.php";
           <li><a href="index.php">Domov</a></li>
           <?php  
           if ($_SESSION['uid'] == 'admin'){?>
-            <li><a href="">Naročila</a></li>
+            <li><a href="pregledNarocil.php">Naročila</a></li>
           <?php } ?>
         </ul>
       <div class="header-login">
