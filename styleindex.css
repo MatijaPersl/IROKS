@@ -1,0 +1,11 @@
+img {
+    max-width: 100%;
+    height: auto;
+    backround: lightblue;
+    backround: radial-gradient(white 30%, lightblue 70%);
+}
+
+.fa-star,
+.fa-star-half{
+    padding: 3% 0;
+}
