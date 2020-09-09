@@ -1,12 +1,8 @@
 <?php
 
-
 	session_start();
 
-	
-
-
-	$db = mysqli_connect("localhost","root", "", "iroks");
+	$db = mysqli_connect("localhost","marko", "bepis", "iroks");
 
 	if(isset($_POST['dodaj_btn'])){
 
@@ -18,10 +14,7 @@
 		$slika = mysqli_real_escape_string($db, $_POST['file']);
     
 
-
-
-		
-		$sql = "INSERT INTO izdelki(ime,serijska,kategorija,cena,opis,slika) VALUES ('$ime','$serijska','$kategorija','$cena','$opis','$slika')";
+		$sql = "INSERT INTO izdelek(ime,serijska,kategorija,cena,opis,slika) VALUES ('$ime','$serijska','$kategorija','$cena','$opis','$slika')";
 		mysqli_query($db,$sql);
 
 
@@ -29,13 +22,6 @@
   }
 
 ?>
-
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
