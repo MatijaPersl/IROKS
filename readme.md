@@ -1,4 +1,3 @@
-# IROKS PROJEKT
+### Web shop ###
 
-### Spletna Trgovina ###
-
+This is a simple PHP web store
